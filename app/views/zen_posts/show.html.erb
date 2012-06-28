@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @zen_post.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @zen_post.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_zen_post_path(@zen_post) %> |
+<%= link_to 'Back', zen_posts_path %>

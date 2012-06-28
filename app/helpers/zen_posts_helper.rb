@@ -1,0 +1,2 @@
+module ZenPostsHelper
+end

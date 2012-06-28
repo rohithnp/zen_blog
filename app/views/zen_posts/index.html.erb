@@ -1,0 +1,23 @@
+<h1>Listing zen_posts</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @zen_posts.each do |zen_post| %>
+  <tr>
+    <td><%= zen_post.title %></td>
+    <td><%= zen_post.content %></td>
+    <td><%= link_to 'Show', zen_post %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Zen post', new_zen_post_path %>
